@@ -10,7 +10,6 @@ const createTuit = (req, res) => {
     res.json(newTuit);
 }
 
-
 const findTuits = (req, res) =>
     res.json(tuits);
 
@@ -23,7 +22,6 @@ const updateTuit = (req, res) => {
         {...tuits[tuitIndex], ...updates};
     res.sendStatus(200);
 }
-
 
 const deleteTuit = (req, res) => {
     const tuitdIdToDelete = req.params.tid;
