@@ -1,6 +1,10 @@
 import mongoose from 'mongoose';
 
 const schema = mongoose.Schema({
+        image: String,
+        username: String,
+        handle: String,
+        time: String,
         tuit: String,
         likes: Number,
         liked: Boolean,
